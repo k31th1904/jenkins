@@ -2,6 +2,7 @@
 
 pipeline {
 	agent none
+ stages {
     stage('Docker Build Image') {
     	agent any
       steps {
@@ -18,3 +19,4 @@ pipeline {
       }
     }
   }
+}
